@@ -18,14 +18,14 @@ myShapes model = [ initialBackground
                               , rect 28 12
                                   |> filled blue
                                   |> move (11, -6)
-                                  |> notifyTap GoToQuestion1
+                                  |> notifyTap (GoToQuestion 1)
                               , text "Start"
                                   |> filled red
                                   |> move (0, -9)
-                                  |> notifyTap GoToQuestion1
+                                  |> notifyTap (GoToQuestion 1)
                               ]
                      -- Question 1 --         
-                     Question1 -> group 
+                     Question 1 -> group 
                                   [ soap (-50, -20)
                                   , text "Question 1"
                                       |> filled red
@@ -58,11 +58,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowVirus
                                   ]
                                   
-                     SoapToVirus 1 -> soapToVir 50 15 (-11, 10) "Question 2"  GoToQuestion2                  
-                     VirusToHuman 1 -> virusToHomo 50 15 (-11, 10) "Question 2" GoToQuestion2
+                     SoapToVirus 1 -> soapToVir 50 15 (-11, 10) "Question 2"  (GoToQuestion 2)                 
+                     VirusToHuman 1 -> virusToHomo 50 15 (-11, 10) "Question 2" (GoToQuestion 2)
                             
                      -- Question 2 --
-                     Question2 -> group
+                     Question 2 -> group
                                   [ soap (-50, -20)
                                   , text "Question 2"
                                       |> filled red
@@ -84,11 +84,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap DecVirusHealth
                                       |> notifyTap ThrowSoap
                                   ]
-                     SoapToVirus 2 -> soapToVir 50 15 (-11, 10) "Question 3" GoToQuestion3
-                     VirusToHuman 2 -> virusToHomo 50 15 (-11, 10) "Question 3" GoToQuestion3
+                     SoapToVirus 2 -> soapToVir 50 15 (-11, 10) "Question 3" (GoToQuestion 3)
+                     VirusToHuman 2 -> virusToHomo 50 15 (-11, 10) "Question 3" (GoToQuestion 3)
                      
                      -- Question 3 --
-                     Question3 -> group
+                     Question 3 -> group
                                   [ soap (-50, -20)
                                   , text "Question 3"
                                       |> filled red
@@ -116,12 +116,12 @@ myShapes model = [ initialBackground
                                       |> notifyTap DecVirusHealth
                                       |> notifyTap ThrowSoap
                                   ]
-                     SoapToVirus 3 -> soapToVir 50 15 (-11, 10) "Question 4" GoToQuestion4
-                     VirusToHuman 3 -> virusToHomo 50 15 (-11, 10) "Question 4" GoToQuestion4
+                     SoapToVirus 3 -> soapToVir 50 15 (-11, 10) "Question 4" (GoToQuestion 4)
+                     VirusToHuman 3 -> virusToHomo 50 15 (-11, 10) "Question 4" (GoToQuestion 4)
                      
                      
                     -- Question 4 --
-                     Question4 -> group
+                     Question 4 -> group
                                   [ soap (-50, -20)
                                   , text "Question 4"
                                       |> filled red
@@ -150,11 +150,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowVirus
                                   
                                   ]
-                     SoapToVirus 4 -> soapToVir 50 15 (-11, 10) "Question 5" GoToQuestion5
-                     VirusToHuman 4 -> virusToHomo 50 15 (-11, 10) "Question 5" GoToQuestion5
+                     SoapToVirus 4 -> soapToVir 50 15 (-11, 10) "Question 5" (GoToQuestion 5)
+                     VirusToHuman 4 -> virusToHomo 50 15 (-11, 10) "Question 5" (GoToQuestion 5)
                      
                      -- Question 5 --
-                     Question5 -> group
+                     Question 5 -> group
                                   [ soap (-50, -20)
                                   , text "Question 5"
                                       |> filled red
@@ -189,11 +189,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowVirus
                                   
                                   ]
-                     SoapToVirus 5 -> soapToVir 50 15 (-11, 10) "Question 6" GoToQuestion6
-                     VirusToHuman 5 -> virusToHomo 50 15 (-11, 10) "Question 6" GoToQuestion6
+                     SoapToVirus 5 -> soapToVir 50 15 (-11, 10) "Question 6" (GoToQuestion 6)
+                     VirusToHuman 5 -> virusToHomo 50 15 (-11, 10) "Question 6" (GoToQuestion 6)
                      
                      -- Question 6 --
-                     Question6 -> group
+                     Question 6 -> group
                                   [ soap (-50, -20)
                                   , text "Question 6"
                                       |> filled red
@@ -228,11 +228,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowVirus
                                   
                                   ]
-                     SoapToVirus 6 -> soapToVir 50 15 (-11, 10) "Question 7" GoToQuestion7
-                     VirusToHuman 6 -> virusToHomo 50 15 (-11, 10) "Question 7" GoToQuestion7
+                     SoapToVirus 6 -> soapToVir 50 15 (-11, 10) "Question 7" (GoToQuestion 7)
+                     VirusToHuman 6 -> virusToHomo 50 15 (-11, 10) "Question 7" (GoToQuestion 7)
                      
                      -- Question 7 --
-                     Question7 -> group
+                     Question 7 -> group
                                   [ soap (-50, -20)
                                   , text "Question 7"
                                       |> filled red
@@ -267,11 +267,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowSoap
                                   
                                   ]
-                     SoapToVirus 7 -> soapToVir 50 15 (-11, 10) "Question 8" GoToQuestion8
-                     VirusToHuman 7 -> virusToHomo 50 15 (-11, 10) "Question 8" GoToQuestion8
+                     SoapToVirus 7 -> soapToVir 50 15 (-11, 10) "Question 8" (GoToQuestion 8)
+                     VirusToHuman 7 -> virusToHomo 50 15 (-11, 10) "Question 8" (GoToQuestion 8)
                      
                      -- Question 8 --
-                     Question8 -> group
+                     Question 8 -> group
                                   [ soap (-50, -20)
                                   , text "Question 8"
                                       |> filled red
@@ -309,11 +309,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap DecHumanHealth
                                       |> notifyTap ThrowVirus                                                                
                                   ]
-                     SoapToVirus 8-> soapToVir 50 15 (-11, 10) "Question 9" GoToQuestion9
-                     VirusToHuman 8 -> virusToHomo 50 15 (-11, 10) "Question 9" GoToQuestion9
+                     SoapToVirus 8-> soapToVir 50 15 (-11, 10) "Question 9" (GoToQuestion 9)
+                     VirusToHuman 8 -> virusToHomo 50 15 (-11, 10) "Question 9" (GoToQuestion 9)
                      
                      -- Question 9 --         
-                     Question9 -> group
+                     Question 9 -> group
                                   [ soap (-50, -20)
                      
                                   , text "Question 9"
@@ -341,11 +341,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowVirus     ]       
                                  
 
-                     SoapToVirus 9 -> soapToVir 50 15 (-13, 10) "Question 10" GoToQuestion10
-                     VirusToHuman 9 -> virusToHomo 50 15 (-13, 10) "Question 10" GoToQuestion10
+                     SoapToVirus 9 -> soapToVir 50 15 (-13, 10) "Question 10" (GoToQuestion 10)
+                     VirusToHuman 9 -> virusToHomo 50 15 (-13, 10) "Question 10" (GoToQuestion 10)
 
                      -- Question 10 --
-                     Question10 -> group
+                     Question 10 -> group
                                   [ soap (-50, -20)
                                   , text "Question 10"
                                       |> filled red
@@ -380,12 +380,12 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowVirus
                                   
                                   ]
-                     SoapToVirus 10 -> soapToVir 50 15 (-13, 10) "Question 11" GoToQuestion11
-                     VirusToHuman 10 -> virusToHomo 50 15 (-13, 10) "Question 11" GoToQuestion11
+                     SoapToVirus 10 -> soapToVir 50 15 (-13, 10) "Question 11" (GoToQuestion 11)
+                     VirusToHuman 10 -> virusToHomo 50 15 (-13, 10) "Question 11" (GoToQuestion 11)
 
 
                      -- Question 11 --         
-                     Question11 -> group
+                     Question 11 -> group
                                   [ soap (-50, -20)
                                   , text "Question 11"
                                       |> filled red
@@ -413,13 +413,13 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowVirus
                                   ]
 
-                     SoapToVirus 11 -> soapToVir 50 15 (-13, 10) "Question 12" GoToQuestion12
-                     VirusToHuman 11 -> virusToHomo 50 15 (-13, 10) "Question 12" GoToQuestion12
+                     SoapToVirus 11 -> soapToVir 50 15 (-13, 10) "Question 12" (GoToQuestion 12)
+                     VirusToHuman 11 -> virusToHomo 50 15 (-13, 10) "Question 12" (GoToQuestion 12)
 
 
 
                      -- Question 12 --         
-                     Question12 -> group
+                     Question 12 -> group
                                   [ soap (-50, -20)
                      
                                   , text "Question 12"
@@ -443,14 +443,14 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowSoap]
 
 
-                     SoapToVirus 12 -> soapToVir 50 15 (-13, 10) "Question 13" GoToQuestion13
-                     VirusToHuman 12 -> virusToHomo 50 15 (-13, 10) "Question 13" GoToQuestion13
+                     SoapToVirus 12 -> soapToVir 50 15 (-13, 10) "Question 13" (GoToQuestion 13)
+                     VirusToHuman 12 -> virusToHomo 50 15 (-13, 10) "Question 13" (GoToQuestion 13)
 
 
 
 
                      -- Question 13 --         
-                     Question13 -> group
+                     Question 13 -> group
                                   [ soap (-50, -20)
                      
                                   , text "Question 13"
@@ -486,13 +486,13 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowVirus]
                    
 
-                     SoapToVirus 13 -> soapToVir 50 15 (-13, 10) "Question 14" GoToQuestion14
-                     VirusToHuman 13 -> virusToHomo 50 15 (-13, 10) "Question 14" GoToQuestion14
+                     SoapToVirus 13 -> soapToVir 50 15 (-13, 10) "Question 14" (GoToQuestion 14)
+                     VirusToHuman 13 -> virusToHomo 50 15 (-13, 10) "Question 14" (GoToQuestion 14)
 
 
 
                      -- Question 14 --                           
-                     Question14 -> group
+                     Question 14 -> group
                                   [ soap (-50, -20)   
                      
                                   , text "Question 14"
@@ -522,11 +522,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowSoap
                                   ]
 
-                     SoapToVirus 14 -> soapToVir 50 15 (-13, 10) "Question 15" GoToQuestion15
-                     VirusToHuman 14 -> virusToHomo 50 15 (-13, 10) "Question 15" GoToQuestion15
+                     SoapToVirus 14 -> soapToVir 50 15 (-13, 10) "Question 15" (GoToQuestion 15)
+                     VirusToHuman 14 -> virusToHomo 50 15 (-13, 10) "Question 15" (GoToQuestion 15)
 
                      -- Question 15 --         
-                     Question15 -> group
+                     Question 15 -> group
                                   [ soap (-50, -20)
                                   , text "Question 15"
                                       |> filled red
@@ -562,11 +562,11 @@ myShapes model = [ initialBackground
                                   ]
 
 
-                     SoapToVirus 15 -> soapToVir 50 15 (-13, 10) "Question 16" GoToQuestion16
-                     VirusToHuman 15 -> virusToHomo 50 15 (-13, 10) "Question 16" GoToQuestion16
+                     SoapToVirus 15 -> soapToVir 50 15 (-13, 10) "Question 16" (GoToQuestion 16)
+                     VirusToHuman 15 -> virusToHomo 50 15 (-13, 10) "Question 16" (GoToQuestion 16)
 
                      -- Question 16 --         
-                     Question16-> group
+                     Question 16-> group
                                   [ soap (-50, -20)
                      
                                   , text "Question 16"
@@ -595,11 +595,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap DecHumanHealth
                                       |> notifyTap ThrowVirus ]
 
-                     SoapToVirus 16 -> soapToVir 50 15 (-13, 10) "Question 17" GoToQuestion17
-                     VirusToHuman 16 -> virusToHomo 50 15 (-13, 10) "Question 17" GoToQuestion17
+                     SoapToVirus 16 -> soapToVir 50 15 (-13, 10) "Question 17" (GoToQuestion 17)
+                     VirusToHuman 16 -> virusToHomo 50 15 (-13, 10) "Question 17" (GoToQuestion 17)
 
                      -- Question 17 --         
-                     Question17 -> group
+                     Question 17 -> group
                                   [ soap (-50, -20)
                                   , text "Question 17"
                                       |> filled red
@@ -633,11 +633,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap DecVirusHealth
                                       |> notifyTap ThrowSoap  ]
 
-                     SoapToVirus 17 -> soapToVir 50 15 (-13, 10) "Question 18" GoToQuestion18
-                     VirusToHuman 17 -> virusToHomo 50 15 (-13, 10) "Question 18" GoToQuestion18
+                     SoapToVirus 17 -> soapToVir 50 15 (-13, 10) "Question 18" (GoToQuestion 18)
+                     VirusToHuman 17 -> virusToHomo 50 15 (-13, 10) "Question 18" (GoToQuestion 18)
 
                     -- Question 18 --        
-                     Question18 -> group
+                     Question 18 -> group
                                   [ soap (-50, -20)                      
                                   , text "Question 18"
                                       |> filled red
@@ -672,11 +672,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowVirus 
                                   ]
 
-                     SoapToVirus 18 -> soapToVir 50 15 (-13, 10) "Question 19" GoToQuestion19
-                     VirusToHuman 18 -> virusToHomo 50 15 (-13, 10) "Question 19" GoToQuestion19
+                     SoapToVirus 18 -> soapToVir 50 15 (-13, 10) "Question 19" (GoToQuestion 19)
+                     VirusToHuman 18 -> virusToHomo 50 15 (-13, 10) "Question 19" (GoToQuestion 19)
 
                      -- Question 19 --        
-                     Question19 -> group
+                     Question 19 -> group
                                   [ soap (-50, -20) 
                      
                                   , text "Question 19"
@@ -717,11 +717,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap DecHumanHealth
                                       |> notifyTap ThrowVirus  ]
 
-                     SoapToVirus 19 -> soapToVir 50 15 (-13, 10) "Question 20" GoToQuestion20
-                     VirusToHuman 19 -> virusToHomo 50 15 (-13, 10) "Question 20" GoToQuestion20
+                     SoapToVirus 19 -> soapToVir 50 15 (-13, 10) "Question 20" (GoToQuestion 20)
+                     VirusToHuman 19 -> virusToHomo 50 15 (-13, 10) "Question 20" (GoToQuestion 20)
 
                      -- Question 20 --       
-                     Question20 -> group
+                     Question 20 -> group
                                   [ soap (-50, -20)  
                      
                                   , text "Question 20"
@@ -757,11 +757,11 @@ myShapes model = [ initialBackground
                                       |> notifyTap ThrowSoap 
                                   ]
 
-                     SoapToVirus 20 -> soapToVir 50 15 (-13, 10) "Question 21" GoToQuestion21
-                     VirusToHuman 20 -> virusToHomo 50 15 (-13, 10) "Question 21" GoToQuestion21
+                     SoapToVirus 20 -> soapToVir 50 15 (-13, 10) "Question 21" (GoToQuestion 21)
+                     VirusToHuman 20 -> virusToHomo 50 15 (-13, 10) "Question 21" (GoToQuestion 21)
 
                      -- Question 21 --                              
-                     Question21 -> group
+                     Question 21 -> group
                                   [ soap (-50, -20)
                                   , text "Question 21"
                                       |> filled red
@@ -1121,27 +1121,7 @@ soap (x,y) = roundedRect 5 7 2
 -- UPDATE --
 type Msg = Tick Float GetKeyState
          | GoToStart
-         | GoToQuestion1
-         | GoToQuestion2
-         | GoToQuestion3
-         | GoToQuestion4
-         | GoToQuestion5
-         | GoToQuestion6
-         | GoToQuestion7
-         | GoToQuestion8
-         | GoToQuestion9
-         | GoToQuestion10
-         | GoToQuestion11
-         | GoToQuestion12
-         | GoToQuestion13
-         | GoToQuestion14
-         | GoToQuestion15
-         | GoToQuestion16
-         | GoToQuestion17
-         | GoToQuestion18
-         | GoToQuestion19
-         | GoToQuestion20
-         | GoToQuestion21
+         | GoToQuestion Int
          | GoToResult
          | DecHumanHealth
          | DecVirusHealth
@@ -1149,27 +1129,7 @@ type Msg = Tick Float GetKeyState
          | ThrowVirus
          
 type State = Start
-           | Question1
-           | Question2
-           | Question3
-           | Question4
-           | Question5
-           | Question6
-           | Question7
-           | Question8
-           | Question9
-           | Question10
-           | Question11
-           | Question12
-           | Question13
-           | Question14
-           | Question15
-           | Question16
-           | Question17
-           | Question18
-           | Question19
-           | Question20
-           | Question21
+           | Question Int
            | Result
            | SoapToVirus Int 
            | VirusToHuman Int
@@ -1177,84 +1137,22 @@ type State = Start
 update msg model = case msg of
                      Tick t _ -> { model | time = t }
                      GoToStart -> { model | state = Start } 
-                     GoToQuestion1 -> { model | state = Question1 }
-                     GoToQuestion2 -> { model | state = Question2 }
-                     GoToQuestion3 -> { model | state = Question3 }
-                     GoToQuestion4 -> { model | state = Question4 }
-                     GoToQuestion5 -> { model | state = Question5 }
-                     GoToQuestion6 -> { model | state = Question6 }
-                     GoToQuestion7 -> { model | state = Question7 }
-                     GoToQuestion8 -> { model | state = Question8 }
-                     GoToQuestion9 -> { model | state = Question9 }
-                     GoToQuestion10 -> { model | state = Question10 }
-                     GoToQuestion11 -> { model | state = Question11 }
-                     GoToQuestion12 -> { model | state = Question12 }
-                     GoToQuestion13 -> { model | state = Question13 }
-                     GoToQuestion14 -> { model | state = Question14 }
-                     GoToQuestion15 -> { model | state = Question15 }
-                     GoToQuestion16 -> { model | state = Question16 }
-                     GoToQuestion17 -> { model | state = Question17 }
-                     GoToQuestion18 -> { model | state = Question18 }
-                     GoToQuestion19 -> { model | state = Question19 }
-                     GoToQuestion20 -> { model | state = Question20 }
-                     GoToQuestion21 -> { model | state = Question21 }
+                     GoToQuestion numQues -> { model | state = Question numQues }
                      GoToResult -> { model | state = Result 
                                    , time = 0}
                      
                      DecHumanHealth -> { model | humanHealth = model.humanHealth - 10 }
                      DecVirusHealth -> { model | virusHealth = model.virusHealth - 10
-                                         ,       score = model.score + 1
+                                       ,         score = model.score + 1
                                        }
                      
                      ThrowSoap -> case model.state of 
-                                      Question1 -> { model | state = SoapToVirus 1 }
-                                      Question2 -> { model | state = SoapToVirus 2 }
-                                      Question3 -> { model | state = SoapToVirus 3 }
-                                      Question4 -> { model | state = SoapToVirus 4 }
-                                      Question5 -> { model | state = SoapToVirus 5 }
-                                      Question6 -> { model | state = SoapToVirus 6 }
-                                      Question7 -> { model | state = SoapToVirus 7 }
-                                      Question8 -> { model | state = SoapToVirus 8 }
-                                      Question9 -> { model | state = SoapToVirus 9 }
-                                      Question10 -> { model | state = SoapToVirus 10 }
-                                      Question11 -> { model | state = SoapToVirus 11 }
-                                      Question12 -> { model | state = SoapToVirus 12 }
-                                      Question13 -> { model | state = SoapToVirus 13 }
-                                      Question14 -> { model | state = SoapToVirus 14 }
-                                      Question15 -> { model | state = SoapToVirus 15 }
-                                      Question16 -> { model | state = SoapToVirus 16 }
-                                      Question17 -> { model | state = SoapToVirus 17 }
-                                      Question18 -> { model | state = SoapToVirus 18 }
-                                      Question19 -> { model | state = SoapToVirus 19 }
-                                      Question20 -> { model | state = SoapToVirus 20 }
-                                      Question21 -> { model | state = SoapToVirus 21 }
+                                     Question numQues -> { model | state = SoapToVirus numQues }
+                                     otherwise -> model
                                       
-                                      
-                                      otherwise -> model
                      ThrowVirus -> case model.state of
-                                      Question1 -> { model | state = VirusToHuman 1 }
-                                      Question2 -> { model | state = VirusToHuman 2 }
-                                      Question3 -> { model | state = VirusToHuman 3 }
-                                      Question4 -> { model | state = VirusToHuman 4 }
-                                      Question5 -> { model | state = VirusToHuman 5 }
-                                      Question6 -> { model | state = VirusToHuman 6 }
-                                      Question7 -> { model | state = VirusToHuman 7 }
-                                      Question8 -> { model | state = VirusToHuman 8 }
-                                      Question9 -> { model | state = VirusToHuman 9 }
-                                      Question10 -> { model | state = VirusToHuman 10 }
-                                      Question11 -> { model | state = VirusToHuman 11 }
-                                      Question12 -> { model | state = VirusToHuman 12 }
-                                      Question13 -> { model | state = VirusToHuman 13 }
-                                      Question14 -> { model | state = VirusToHuman 14 }
-                                      Question15 -> { model | state = VirusToHuman 15 }
-                                      Question16 -> { model | state = VirusToHuman 16 }
-                                      Question17 -> { model | state = VirusToHuman 17 }
-                                      Question18 -> { model | state = VirusToHuman 18 }
-                                      Question19 -> { model | state = VirusToHuman 19 }
-                                      Question20 -> { model | state = VirusToHuman 20 }
-                                      Question21 -> { model | state = VirusToHuman 21 }
-                                      otherwise -> model
-
+                                     Question numQues -> { model | state = VirusToHuman numQues }
+                                     otherwise -> model
 
 
 -- INIT --
